@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0c261e78-d0ae-4288-8a4a-b53fb925524f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZtWudvjpHc8iBTzUU4nl9TU8FM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resource" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.runnerclass">
+    <configuration name="Feature: FirstFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationPracticeWebsite" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: FirstFeature" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Navigate to t shirt section from Women" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationPracticeWebsite" />
+      <option name="NAME_FILTER" value="^Navigate to t shirt section from Women$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Navigate to t shirt section from Women$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Navigate to t shirt section from Women" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify element added to cart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationPracticeWebsite" />
+      <option name="NAME_FILTER" value="^Verify element added to cart$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify element added to cart$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify element added to cart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Verify navigate to shopping website" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="AutomationPracticeWebsite" />
+      <option name="NAME_FILTER" value="^Verify navigate to shopping website$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify navigate to shopping website$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify navigate to shopping website" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="runnerclass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AutomationPracticeWebsite" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.runnerclass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.runnerclass" />
+        <item itemvalue="Cucumber java.Feature: FirstFeature" />
+        <item itemvalue="Cucumber java.Scenario: Verify navigate to shopping website" />
+        <item itemvalue="Cucumber java.Scenario: Navigate to t shirt section from Women" />
+        <item itemvalue="Cucumber java.Scenario: Verify element added to cart" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c261e78-d0ae-4288-8a4a-b53fb925524f" name="Default Changelist" comment="" />
+      <created>1585659094955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585659094955</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="617" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585688243623">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="617" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585688243623" />
+    <state width="1750" height="450" key="GridCell.Tab.0.bottom" timestamp="1585696329504">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="450" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1585696329504" />
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
+    <state width="1750" height="450" key="GridCell.Tab.0.center" timestamp="1585696329504">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="450" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1585696329504" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
+    <state width="1750" height="450" key="GridCell.Tab.0.left" timestamp="1585696329503">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="450" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1585696329503" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575747" />
+    <state width="1750" height="450" key="GridCell.Tab.0.right" timestamp="1585696329504">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1750" height="450" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1585696329504" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
+    <state x="434" y="222" key="Maven.ArtifactSearchDialog" timestamp="1585667496053">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="434" y="222" key="Maven.ArtifactSearchDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1585667496053" />
+    <state x="397" y="199" key="SettingsEditor" timestamp="1585659108591">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1585659108591" />
+    <state x="573" y="379" key="com.intellij.ide.util.TipDialog" timestamp="1585697112870">
+      <screen x="0" y="23" width="1792" height="1017" />
+    </state>
+    <state x="573" y="392" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1585666041269" />
+    <state x="573" y="379" key="com.intellij.ide.util.TipDialog/0.23.1792.1017@0.23.1792.1017" timestamp="1585697112870" />
+    <state x="653" y="488" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1585673218533">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="653" y="488" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1585673218533" />
+  </component>
+</project>
