@@ -19,11 +19,14 @@ import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-public class webconnector {
+public class webconnector extends DriverClass{
 
     // intitalising files and driver
 
-    private  WebDriver driver = null;
+  //  private  WebDriver driver = null;
+    DriverClass dc = new DriverClass();
+     FirstConfigFile FC= new FirstConfigFile();
+
 
    /* most impt if u make webdriver static above
      i.e   private static WebDriver driver = null;
@@ -31,12 +34,12 @@ public class webconnector {
             if you want to run tests after closing browser after every scenario then we need to remove static
     i.e    private  WebDriver driver = null;*/
 
-    public  String browser = null;
+  /*  public  String browser = null;
     public  FileInputStream configfile = null;
-    public  Properties prop = null;
+    public  Properties prop = null;*/
 
 
-    public static ThreadLocal<WebDriver> dr = new ThreadLocal<WebDriver>();
+    /*public static ThreadLocal<WebDriver> dr = new ThreadLocal<WebDriver>();
 
 
     public  void setWebDriver(WebDriver driver) {
@@ -48,27 +51,28 @@ public class webconnector {
 
         return dr.get();
 
-    }
+    }*/
 
 
     // intialise the config file
 
-    public  void intialise() throws IOException, BiffException {
-        configfile = new FileInputStream("src/main/java/resource/Config.properties");
+    public  void intialise() throws IOException {
+        /*configfile = new FileInputStream("src/main/java/resource/Config.properties");
 
         prop = new Properties();
         prop.load(configfile);
-        System.out.println("intialised");
+        System.out.println("intialised");*/
 
+        FC.preFirstIntialise();
     }
 
 
     // getting browser from config file
 
-    public  String getbrowser() {
+   /* public  String getbrowser() {
         return browser = prop.getProperty("browser");
 
-    }
+    }*/
 
     /////////////////////////////////////// OPEN BROWSER////////////////////////////////////////////////////////
 
@@ -81,21 +85,23 @@ public class webconnector {
 
             if (driver == null) {
 
-
+                System.out.println(FC.getBrowser+"<<<<<");
+                System.out.println(FC.getLocation+"<<<<<");
                 // firefox browser
-                if (getbrowser().equalsIgnoreCase("Firefox") && prop.getProperty("location").equalsIgnoreCase("local")) {
+                if (FC.getBrowser.equalsIgnoreCase("Firefox") && FC.getLocation.equalsIgnoreCase("local")) {
                     WebDriverManager.firefoxdriver().clearPreferences();
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     setWebDriver(driver);
 
                     // Chrome browser
-                } else if (getbrowser().equalsIgnoreCase("chrome") && prop.getProperty("location").equalsIgnoreCase("local")) {
+                } else if (FC.getBrowser.equalsIgnoreCase("chrome") && FC.getLocation.equalsIgnoreCase("local")) {
 
-                    WebDriverManager.chromedriver().clearPreferences();
+                   /* WebDriverManager.chromedriver().clearPreferences();
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-                    setWebDriver(driver);
+                    setWebDriver(driver);*/
+                    System.out.println("int chrome"); dc.chromecap();
 
 
                 }
@@ -116,7 +122,7 @@ public class webconnector {
                 System.out.println("goingtoweb");
                 getDriver().manage().window().maximize();
                 getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-                getDriver().get(prop.getProperty("url"));
+                getDriver().get(FC.getURL);
             }
         }
 
