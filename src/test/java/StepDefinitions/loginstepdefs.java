@@ -13,22 +13,19 @@ import org.openqa.selenium.support.PageFactory;
 import java.io.IOException;
 import java.util.List;
 
-public class loginstepdefs extends webconnector{
+public class loginstepdefs extends webconnector {
 
 
     public LoginMethods LG;
-    public WebDriver dri=null;
-
+    public homepagemethods homepage_method;
 
     //contructor initialising config file and login page method
     public loginstepdefs() throws IOException, BiffException {
 
-       intialise();
-        this.dri=open_browser();
-        LG = PageFactory.initElements(dri, LoginMethods.class);
-        gotowebsite();
+        //no need to mention intialse again as its already called in first step which in turns call homestepdefs
 
-
+        homepage_method = PageFactory.initElements(getDriver(), homepagemethods.class);
+        LG = PageFactory.initElements(getDriver(), LoginMethods.class);
 
 
     }

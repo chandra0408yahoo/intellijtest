@@ -1,8 +1,6 @@
 package methods;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -11,9 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import Utilities.util;
-import Utilities.webconnector;
 
-public class homepagemethods extends webconnector {
+public class homepagemethods extends util {
 
     //repository for elements
 
@@ -53,7 +50,7 @@ public class homepagemethods extends webconnector {
     public void gotohomepage() {
 
 
-        util.waitforelementtoappear(homepage);
+        waitforelementtoappear(homepage);
         homepage.click();
 
 
@@ -63,7 +60,7 @@ public class homepagemethods extends webconnector {
     public void typeSummerDress(String str) {
 
 
-        util.waitforelementtoappear(SearchTab);
+        waitforelementtoappear(SearchTab);
         SearchTab.sendKeys(str);
         SearchTab.sendKeys(Keys.ENTER);
 
@@ -80,8 +77,8 @@ public class homepagemethods extends webconnector {
     public void clickOnitem() {
 
 
-        util.waitforelementtoappear(clickOnitem);
-        util.navigatetoelementandclicksubelement(clickOnitem, subelement);
+        waitforelementtoappear(clickOnitem);
+        navigatetoelementandclicksubelement(clickOnitem, subelement);
 
     }
 
@@ -89,9 +86,9 @@ public class homepagemethods extends webconnector {
     public void verifyItemAddedToCart() {
 
 
-        util.waitforelementtoappear(VerifyTxt);
+        waitforelementtoappear(VerifyTxt);
         Assert.assertTrue(VerifyTxt.getText().contains("Product successfully added to your shopping cart"));
-        util.waitforelementtoappear(cross);
+        waitforelementtoappear(cross);
         cross.click();
 
     }
@@ -99,8 +96,8 @@ public class homepagemethods extends webconnector {
     public void ClickOnTshirtWomenSection() {
 
 
-        util.waitforelementtoappear(WomenTab);
-        util.navigatetoelementandclicksubelement(WomenTab, TShirt_WomenTab);
+       waitforelementtoappear(WomenTab);
+     navigatetoelementandclicksubelement(WomenTab, TShirt_WomenTab);
 
     }
 
@@ -108,7 +105,7 @@ public class homepagemethods extends webconnector {
     public void VerifyImOnTShirtWomenSection() {
 
 
-        util.waitforelementtoappear(TshirtText);
+        waitforelementtoappear(TshirtText);
         Assert.assertTrue(TshirtText.getText().equals("T-SHIRTS "));
 
     }
@@ -117,7 +114,7 @@ public class homepagemethods extends webconnector {
     public void ClickOnlinksicons() {
 
 
-        util.waitforelementtoappear(linksFilters);
+        waitforelementtoappear(linksFilters);
         linksFilters.click();
 
     }

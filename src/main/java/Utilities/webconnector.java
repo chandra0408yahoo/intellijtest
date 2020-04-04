@@ -102,14 +102,13 @@ public class webconnector {
 
 
     public  void gotowebsite() {
-        System.out.println("website");
+        System.out.println("OPENING website");
 
 
             if (!getDriver().getCurrentUrl().contains("automationpractice")) {
                 System.out.println("goingtoweb");
                 getDriver().manage().window().maximize();
                 getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
                 getDriver().get(prop.getProperty("url"));
             }
         }

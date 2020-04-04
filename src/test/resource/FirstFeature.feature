@@ -7,6 +7,7 @@ Feature: Automation test Practice website
     Then User should be navigated to summer dress page
 
 
+
   Scenario: Verify element added to cart
 
     Given Navigate to website
@@ -26,4 +27,3 @@ Feature: Automation test Practice website
     Given Navigate to website
     When I click on filter icons
     Then I verify I am navigated to filtered website
-

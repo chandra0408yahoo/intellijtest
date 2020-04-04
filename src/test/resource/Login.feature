@@ -1,6 +1,6 @@
 Feature: Automation test Practice website login feature
 
-  @web
+
   Scenario: Verify Login button
     Given Navigate to website
     When I enter incorrect username and password

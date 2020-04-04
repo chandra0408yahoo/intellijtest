@@ -7,7 +7,9 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginMethods extends webconnector {
+import javax.swing.text.Utilities;
+
+public class LoginMethods extends util {
 
     //repository for elements
 
@@ -27,10 +29,12 @@ public class LoginMethods extends webconnector {
     public static WebElement authfail;
 
 
+
+
     public void ClickSignin() {
 
 
-        util.waitforelementtoappear(signin);
+        waitforelementtoappear(signin);
         signin.click();
 
     }
@@ -38,26 +42,26 @@ public class LoginMethods extends webconnector {
     public void username(String str) {
 
 
-        util.waitforelementtoappear(username);
+        waitforelementtoappear(username);
         username.sendKeys(str);
 
     }
 
     public void password(String str) {
-        util.waitforelementtoappear(password);
+        waitforelementtoappear(password);
         password.sendKeys(str);
 
     }
 
     public void login() {
-        util.waitforelementtoappear(login);
+        waitforelementtoappear(login);
         login.click();
 
     }
 
 
     public void verifyauthfail() {
-        util.waitforelementtoappear(authfail);
+        waitforelementtoappear(authfail);
         Assert.assertTrue(authfail.getText().contains("Authentication failed"));
 
     }

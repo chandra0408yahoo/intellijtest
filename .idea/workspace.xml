@@ -5,9 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/webconnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/webconnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/methods/LoginMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methods/LoginMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/methods/homepagemethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/methods/homepagemethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/homepagestepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/homepagestepdefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/loginstepdefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/loginstepdefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resource/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resource/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +70,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Navigate to t shirt section from Women" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Verify Login button" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/FirstFeature.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resource/Login.feature" />
       <option name="GLUE" value="StepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
       <module name="AutomationPracticeWebsite" />
-      <option name="NAME_FILTER" value="^Navigate to t shirt section from Women$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Navigate to t shirt section from Women$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Navigate to t shirt section from Women" />
+      <option name="NAME_FILTER" value="^Verify Login button$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Verify Login button$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verify Login button" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
@@ -142,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.runnerclass" />
-        <item itemvalue="Cucumber java.Feature: FirstFeature" />
         <item itemvalue="Cucumber java.Scenario: Verify Search button" />
+        <item itemvalue="Cucumber java.Scenario: Verify Login button" />
+        <item itemvalue="Cucumber java.Feature: FirstFeature" />
         <item itemvalue="Cucumber java.Scenario: Verify navigate to shopping website" />
-        <item itemvalue="Cucumber java.Scenario: Navigate to t shirt section from Women" />
       </list>
     </recent_temporary>
   </component>
@@ -167,25 +170,25 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="617" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585688243623" />
-    <state width="1750" height="406" key="GridCell.Tab.0.bottom" timestamp="1586020413313">
+    <state width="1750" height="327" key="GridCell.Tab.0.bottom" timestamp="1586036616584">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="406" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586020413313" />
+    <state width="1750" height="327" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586036616584" />
     <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
-    <state width="1750" height="406" key="GridCell.Tab.0.center" timestamp="1586020413311">
+    <state width="1750" height="327" key="GridCell.Tab.0.center" timestamp="1586036616583">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="406" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586020413311" />
+    <state width="1750" height="327" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586036616583" />
     <state width="1750" height="318" key="GridCell.Tab.0.center/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
-    <state width="1750" height="406" key="GridCell.Tab.0.left" timestamp="1586020413310">
+    <state width="1750" height="327" key="GridCell.Tab.0.left" timestamp="1586036616582">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="406" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586020413310" />
+    <state width="1750" height="327" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586036616582" />
     <state width="1750" height="318" key="GridCell.Tab.0.left/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575747" />
-    <state width="1750" height="406" key="GridCell.Tab.0.right" timestamp="1586020413312">
+    <state width="1750" height="327" key="GridCell.Tab.0.right" timestamp="1586036616584">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="406" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586020413312" />
+    <state width="1750" height="327" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586036616584" />
     <state width="1750" height="318" key="GridCell.Tab.0.right/0.23.1792.1017@0.23.1792.1017" timestamp="1585659575748" />
     <state x="434" y="222" key="Maven.ArtifactSearchDialog" timestamp="1585667496053">
       <screen x="0" y="0" width="1792" height="1120" />
