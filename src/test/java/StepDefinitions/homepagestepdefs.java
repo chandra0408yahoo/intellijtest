@@ -5,6 +5,7 @@ import java.io.IOException;
 import cucumber.api.java.en.When;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.util;
@@ -17,17 +18,24 @@ import jxl.read.biff.BiffException;
 import methods.homepagemethods;
 
 import static Utilities.util.navigatetoelementandclicksubelement;
-import static Utilities.webconnector.intialise;
+//import static Utilities.webconnector.intialise;
 
-public class homepagestepdefs {
+public class homepagestepdefs extends webconnector{
 
     //creating object for methods
     public homepagemethods homepage_method;
+    public WebDriver dri=null;
 
     //contructor initialising config file and homepage method
     public homepagestepdefs() throws IOException, BiffException {
-        webconnector.intialise();
-        homepage_method = PageFactory.initElements(webconnector.open_browser(), homepagemethods.class);
+
+
+      	System.out.println("first");
+    	intialise();
+    	this.dri=open_browser();
+        homepage_method  =PageFactory.initElements(dri,homepagemethods.class);
+
+
 //test
     }
 
@@ -35,25 +43,28 @@ public class homepagestepdefs {
     //opening browser and navigating to website
     @Before()
     public void firstbefore() throws IOException, BiffException {
-        webconnector.open_browser();
+        gotowebsite();
         System.out.println("before step");
 
 
     }
 
     //quiting browser
-    @After("@web")
+    @After()
     public void firstafter() throws IOException {
 
-        webconnector.quitbrowser();
+        quitbrowser();
         System.out.println("AFTER step");
+
+
+
 
     }
 
 
     @Given("^Navigate to website$")
     public void navigateToWebsite() {
-        webconnector.gotowebsite();
+        System.out.println("websiteGIVEN");
     }
 
     @When("^user enters summer (.*)$")
@@ -64,7 +75,7 @@ public class homepagestepdefs {
     @Then("^User should be navigated to summer dress page$")
     public void userShouldBeNavigatedToSummerDressPage() {
         homepage_method.verifyUserNavigatedToSummerDress();
-        homepage_method.gotohomepage();
+      //  homepage_method.gotohomepage();
     }
 
     @When("^I Click on an item$")
@@ -101,6 +112,6 @@ public class homepagestepdefs {
     @Then("^I verify I am navigated to filtered website$")
     public void iVerifyIAmNavigatedToFilteredWebsite() {
         homepage_method.verifyIamonfilteredIcons();
-        webconnector.gotowebsite();
+        //gotowebsite();
     }
 }

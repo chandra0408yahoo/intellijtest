@@ -72,7 +72,7 @@ public class homepagemethods extends webconnector {
     public void verifyUserNavigatedToSummerDress() {
 
 
-        Assert.assertTrue(webconnector.driver.getCurrentUrl().contains("dress"));
+        Assert.assertTrue(getDriver().getCurrentUrl().contains("dress"));
 
 
     }
@@ -125,7 +125,7 @@ public class homepagemethods extends webconnector {
     public void verifyIamonfilteredIcons() {
 
 
-        Assert.assertTrue(webconnector.driver.getCurrentUrl().contains("prestashop"));
+        Assert.assertTrue(getDriver().getCurrentUrl().contains("prestashop"));
 
     }
 

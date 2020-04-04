@@ -7,21 +7,29 @@ import cucumber.api.java.en.When;
 import jxl.read.biff.BiffException;
 import methods.LoginMethods;
 import methods.homepagemethods;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 import java.util.List;
 
-public class loginstepdefs {
+public class loginstepdefs extends webconnector{
 
 
     public LoginMethods LG;
+    public WebDriver dri=null;
+
 
     //contructor initialising config file and login page method
     public loginstepdefs() throws IOException, BiffException {
 
-        webconnector.intialise();
-        LG = PageFactory.initElements(webconnector.open_browser(), LoginMethods.class);
+       intialise();
+        this.dri=open_browser();
+        LG = PageFactory.initElements(dri, LoginMethods.class);
+        gotowebsite();
+
+
+
 
     }
 
