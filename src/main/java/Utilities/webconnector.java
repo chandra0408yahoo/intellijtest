@@ -39,12 +39,12 @@ public class webconnector {
     public static ThreadLocal<WebDriver> dr = new ThreadLocal<WebDriver>();
 
 
-    public static  void setWebDriver(WebDriver driver) {
+    public  void setWebDriver(WebDriver driver) {
 
         dr.set(driver);
     }
 
-    public static  WebDriver getDriver() {
+    public   WebDriver getDriver() {
 
         return dr.get();
 
@@ -71,34 +71,41 @@ public class webconnector {
     }
 
     /////////////////////////////////////// OPEN BROWSER////////////////////////////////////////////////////////
+
+
+
+
     public  WebDriver open_browser() {
         System.out.println("openin brwer");
 
-        if (driver == null) {
+
+            if (driver == null) {
 
 
-            // firefox browser
-            if (getbrowser().equalsIgnoreCase("Firefox")) {
-                WebDriverManager.firefoxdriver().clearPreferences();
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
-                setWebDriver(driver);
+                // firefox browser
+                if (getbrowser().equalsIgnoreCase("Firefox") && prop.getProperty("location").equalsIgnoreCase("local")) {
+                    WebDriverManager.firefoxdriver().clearPreferences();
+                    WebDriverManager.firefoxdriver().setup();
+                    driver = new FirefoxDriver();
+                    setWebDriver(driver);
 
-                // Chrome browser
-            } else if (getbrowser().equalsIgnoreCase("chrome")) {
+                    // Chrome browser
+                } else if (getbrowser().equalsIgnoreCase("chrome") && prop.getProperty("location").equalsIgnoreCase("local")) {
 
-                WebDriverManager.chromedriver().clearPreferences();
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                setWebDriver(driver);
+                    WebDriverManager.chromedriver().clearPreferences();
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver();
+                    setWebDriver(driver);
 
+
+                }
 
             }
 
+            return driver;
         }
 
-        return driver;
-    }
+
 
 
     public  void gotowebsite() {
