@@ -27,8 +27,8 @@ public class homepagestepdefs extends util{
 
       	System.out.println("first");
     	intialise();
-    	open_browser();
-        homepage_method  =PageFactory.initElements(getDriver(),homepagemethods.class);
+    	//open_browser();
+        homepage_method  =PageFactory.initElements(open_browser(),homepagemethods.class);
 
 
     }

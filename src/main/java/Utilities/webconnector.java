@@ -101,14 +101,15 @@ public class webconnector extends DriverClass{
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     setWebDriver(driver);*/
-                    System.out.println("int chrome"); dc.chromecap();
+                    System.out.println("int chrome");
+                    dc.chromecap();
 
 
                 }
 
             }
 
-            return driver;
+            return getDriver();
         }
 
 
